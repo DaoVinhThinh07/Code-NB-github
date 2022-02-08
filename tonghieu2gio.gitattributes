@@ -1,0 +1,50 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+  int gio1, phut1, giay1 ,gio2 ,phut2, giay2;
+  int gio0=0, phut0=0, giay0=0;
+  int gio3=0, phut3=0, giay3=0;
+  cout<<"nhap gio dau tien:...gio...phut...giay "<<endl;
+  cin>>gio1;
+  cin>>phut1;
+  cin>>giay1;
+  cout<<"\n"<<"nhap gio thu 2:...gio...phut...giay";
+  cin>>gio2;
+  cin>>phut2; 
+  cin>>giay2;
+  cout<<gio1+gio2;
+ //cong gio
+  gio0=gio1+gio2;
+  phut0=phut1+phut2;
+  giay0=giay1+giay2;
+ //tru gio
+  gio3=gio1-gio2;
+  phut3=phut1-phut2;
+  giay3=giay1-giay2;
+ //thuat toan cong gio
+  if(giay0>=60)
+   phut0=phut0+1;
+   giay0=giay0-60;
+  if(phut0>=60)
+   gio0=gio0+1;
+   phut0=phut0-60;
+  cout<<"tong 2 gio la: "<<gio0<<"gio "<<phut0<<"phut "<<giay0<<"giay"<<"\n";
+  //thuat toan tru gio
+  if(giay3<=0)
+   phut3=phut3-1;
+   giay3=60+giay3;
+  if(phut3<=0)
+   gio3=gio3-1;
+   phut3=60+phut3;
+   //loai so nguyen
+  if(gio3<=0)
+   gio3=0;
+  if(phut3<=0)
+   phut3=0;
+  if(giay3<=0)
+   giay3=0;
+  cout<<"hieu 2 gio la: "<<gio3<<"gio "<<phut3<<"phut "<<giay3<<"giay";
+  return 0;
+}
