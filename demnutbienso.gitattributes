@@ -1,0 +1,16 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int a, b , c , d , e, f;
+    cout<<"5 so trong bien so cua ban lan luot la: "<<"\n";
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    cin>>d;
+    cin>>e;
+    f=(a+b+c+d+e)%10;
+    cout<<"bien so cua ban duoc:"<<f<<" nut";
+    return 0;
+}
