@@ -1,0 +1,28 @@
+#include<iostream>
+#include<math.h>
+#include <iomanip>
+using namespace std;
+int main()
+{  
+  float a, b, c;
+  float delta;
+  cout<<"tim nghiem phuong trinh bac 2 co dang (Ax^2 + Bx + C = 0):"<<endl;
+  cout<<"A= "<<endl;
+  cin>>a;
+  cout<<"B= "<<endl;
+  cin>>b;
+  cout<<"C= "<<endl;
+  cin>>c;
+  delta=(b*b)-(4*a*c);
+  if (delta==0)
+   cout<<"PT co nghiem kep: x1 = x2 = "<<-b/(2*a);
+  if (delta<0)
+   cout<<"PT vo nghiem";
+  if (delta>0)
+  {
+      cout<<"PT co hai nghiem phan biet:"<<"\n";
+      cout<<"\n"<<"x1 = "<<(-b+sqrt(delta))/(2*a)<<"\n";
+      cout<<"\n"<<"x2 = "<<(-b-sqrt(delta))/(2*a);
+  }
+ return 0;
+}
