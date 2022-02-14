@@ -1,0 +1,32 @@
+#include<iostream>
+#include<math.h>
+#include<iomanip>
+using namespace std;
+int main()
+ { float a, b, c, s, m;
+  cout<<"Day la chuong trinh kiem tra va tinh dien tich tam giac"<<endl;
+  cout<<" Vui long nhap vao chieu dai 3 canh :"<<endl;
+   cin>>a>>b>>c;
+    s=sqrt((a+b+c)*(a+b-c)*(b+c-a)*(c+a-b))/4;
+     if(a+b<=c||b+c<=a||a+c<=b) cout<<"Khong phai tam giac";
+   else 
+   {  if((a*a+b*b)==(c*c) || (c*c+b*b)==(a*a) || (a*a+c*c)==(b*b))
+       {
+          cout<<"Tam giac vuong, dien tich = "<<setprecision(2)<<fixed<<s;
+       } 
+     else if(a==b&&b==c)
+       {
+          cout<<"Tam giac deu, dien tich = "<<setprecision(2)<<fixed<<s;
+       }
+     else if(a==b|| b==c|| a==c)
+        {
+           cout<<"Tam giac can, dien tich = "<<setprecision(2)<<fixed<<s;
+        }
+      else
+         {
+            cout<<"Tam giac thuong, dien tich = "<<setprecision(2)<<fixed<<s;
+         }
+   }
+ return 0;
+
+}
