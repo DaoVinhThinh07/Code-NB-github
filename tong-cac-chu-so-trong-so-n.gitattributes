@@ -1,0 +1,17 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{ 
+ int n,a,b=0;
+ cout<<"nhap so tu nhien N:";
+ cin>>n;
+ while(n!=0)
+ {
+  a=n%10;
+  b+=a;
+  n=n/10;
+ }
+ cout<<"Tong cac chu so cua N= "<<b<<endl;
+ return 0;
+}
